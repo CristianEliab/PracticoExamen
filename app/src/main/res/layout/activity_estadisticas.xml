@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinner_filtrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_genero"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:entries="@array/super_arrays"
+        android:prompt="@string/seleccione_publico"></Spinner>
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_filtrar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Los super heroes más importantes son:" />
+
+    <RelativeLayout
+        android:id="@+id/rl_super_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_super_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text="SpiderMan" />
+
+        <TextView
+            android:id="@+id/tv_cantidad_votos_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_super_1"
+            android:layout_marginLeft="200dp"
+            android:text="50%" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_super_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_super_1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_super_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text="IronMan" />
+
+        <TextView
+            android:id="@+id/tv_cantidad_votos_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_super_2"
+            android:layout_marginLeft="200dp"
+            android:text="50%" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_super_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_super_2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_super_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text="Capitan America" />
+
+        <TextView
+            android:id="@+id/tv_cantidad_votos_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_super_3"
+            android:layout_marginLeft="200dp"
+            android:text="50%" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_super_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_super_3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_super_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text="Capitana Marvel" />
+
+        <TextView
+            android:id="@+id/tv_cantidad_votos_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_super_4"
+            android:layout_marginLeft="200dp"
+            android:text="50%" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_super_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_super_4"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_super_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text="Hulk" />
+
+        <TextView
+            android:id="@+id/tv_cantidad_votos_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_super_5"
+            android:layout_marginLeft="200dp"
+            android:text="50%" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_super_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_super_5"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_super_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text="Viuda Negra" />
+
+        <TextView
+            android:id="@+id/tv_cantidad_votos_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_super_6"
+            android:layout_marginLeft="200dp"
+            android:text="50%" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_super_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_super_6"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_super_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text="Thor" />
+
+        <TextView
+            android:id="@+id/tv_cantidad_votos_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_super_7"
+            android:layout_marginLeft="200dp"
+            android:text="50%" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_super_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_super_7"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_super_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text="Doctorstrange" />
+
+        <TextView
+            android:id="@+id/tv_cantidad_votos_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_super_8"
+            android:layout_marginLeft="200dp"
+            android:text="50%" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/et_contexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:hint="A continuación responda las siguientes preguntas:" />
+
+    <TextView
+        android:id="@+id/tv_rango_edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_contexto"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Rango de Edad:" />
+
+    <CheckBox
+        android:id="@+id/checkBox_mayor_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rango_edad"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Mayores a 30 años" />
+
+    <CheckBox
+        android:id="@+id/checkBox_entre_13_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox_mayor_30"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Entre 13 años y 30 años" />
+
+    <CheckBox
+        android:id="@+id/checkBox_menores_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox_entre_13_30"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50dp"
+        android:text="Menores a 13 años" />
+
+    <TextView
+        android:id="@+id/tv_genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox_menores_13"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:hint="Seleccione su género"
+        android:inputType="phone" />
+
+    <Spinner
+        android:id="@+id/spinner_genero_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_genero"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:entries="@array/lista_generos"
+        android:prompt="@string/seleccione_prompt"></Spinner>
+
+
+    <Button
+        android:id="@+id/btn_continuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_genero_1"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Continuar Encuesta" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PracticoExamen</string>
+    <string name="seleccione_prompt">Género</string>
+    <string name="seleccione_publico">Filtro</string>
+
+    <string-array name="lista_generos">
+        <item>Mujer</item>
+        <item>Hombre</item>
+    </string-array>
+
+    <string-array name="super_arrays">
+        <item>Todo el público</item>
+        <item>Mujeres adultas</item>
+        <item>Hombre adultos</item>
+        <item>Mujer joven</item>
+        <item>Hombre joven</item>
+        <item>Niños</item>
+    </string-array>
+</resources>
