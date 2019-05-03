@@ -9,9 +9,20 @@ public class Super {
     private String email;
     private String userID;
     private String tipo_Super;
+    private int catidad_votos;
+    private boolean first;
 
     //Serializar
     public Super() {
+        this.catidad_votos = 0;
+    }
+
+    public boolean isFirst() {
+        return first;
+    }
+
+    public void setFirst(boolean first) {
+        this.first = first;
     }
 
     public Super(String id, String nombre, String edad, String telefono, String email, String userID) {
@@ -85,6 +96,14 @@ public class Super {
 
     public void setUserID(String userID) {
         this.userID = userID;
+    }
+
+    public int getCatidad_votos() {
+        return catidad_votos;
+    }
+
+    public void setCatidad_votos(int catidad_votos) {
+        this.catidad_votos = catidad_votos;
     }
 
     @Override

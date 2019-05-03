@@ -58,33 +58,8 @@ public class Preguntas extends AppCompatActivity implements AdapterAmigos.OnItem
     @Override
     public void onItemClick(Super aSuper) {
         Intent i = new Intent(Preguntas.this, Estadisticas.class);
-        if(aSuper.getTipo_Super().equals("1")){
-            i.putExtra(Constantes.KEY_SUPER,""+ aSuper.getId());
-        }
-        if(aSuper.getTipo_Super().equals("2")){
-            i.putExtra(Constantes.KEY_SUPER,""+ aSuper.getId());
-        }
-        if(aSuper.getTipo_Super().equals("3")){
-            i.putExtra(Constantes.KEY_SUPER,""+ aSuper.getId());
-        }
-        if(aSuper.getTipo_Super().equals("4")){
-            i.putExtra(Constantes.KEY_SUPER,""+ aSuper.getId());
-        }
-        if(aSuper.getTipo_Super().equals("5")){
-            i.putExtra(Constantes.KEY_SUPER,""+ aSuper.getId());
-        }
-        if(aSuper.getTipo_Super().equals("6")){
-            i.putExtra(Constantes.KEY_SUPER,""+ aSuper.getId());
-        }
-        if(aSuper.getTipo_Super().equals("7")){
-            i.putExtra(Constantes.KEY_SUPER,""+ aSuper.getId());
-        }
-        if(aSuper.getTipo_Super().equals("8")){
-            i.putExtra(Constantes.KEY_SUPER,""+ aSuper.getId());
-        }
+        i.putExtra(Constantes.KEY_SUPER,""+ aSuper.getTipo_Super());
         i.putExtra(Constantes.TIPO_PERSONA,tipo_persona);
-
-
         startActivity(i);
 
     }
